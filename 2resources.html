@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>白曜华的计算机导论大作业</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            /* body 样式 */
+            body {
+                font-family: Arial;
+                margin: 0;
+            }
+ 
+            /* 标题 */
+            .header {
+                padding: 80px;
+                text-align: center;
+                background: #04205c;
+                color: white;
+            }
+ 
+            /* 标题字体加大 */
+            .header h1 {
+                font-size: 40px;
+            }
+ 
+            /* 导航 */
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+ 
+            /* 导航栏样式 */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+ 
+            /* 右侧链接*/
+            .navbar a.right {
+                float: right;
+            }
+ 
+            /* 鼠标移动到链接的颜色 */
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+ 
+            /* 列容器 */
+            .row {  
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+            }
+ 
+            /* 创建两个列 */
+            /* 边栏 */
+            .side {
+                -ms-flex: 30%; /* IE10 */
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+ 
+            /* 主要的内容区域 */
+            .main {   
+                -ms-flex: 70%; /* IE10 */
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+ 
+            /* 测试图片 */
+            .fakeimg {
+                background-color: #aaa;
+                width: 100%;
+                padding: 20px;
+            }
+ 
+            /* 底部 */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+            }
+ 
+            /* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+            @media screen and (max-width: 700px) {
+                .row {   
+                    flex-direction: column;
+                }
+            }
+ 
+            /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+            @media screen and (max-width: 400px) {
+                .navbar a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>      
+        <div class="header">
+            <h1>白曜华的计算机导论大作业</h1>
+            <p>关于计算机的一切</p>
+        </div>
+        <div class="navbar">
+            <a href="index.html">主页</a>
+            <a href="1relationship.html">学科关系</a>
+            <a href="2resources.html">参考资料</a>
+            <a href="3cognation.html">专业认识</a>
+            <a href="4plan.html">学业规划</a>
+        </div>
+        <div class="row">
+            <div class="side">
+                <h2>关于本页</h2>
+                <h3>我是白曜华，西安交通大学计算机系2020级在读本科生。希望这个网页能够帮助更多计算机系的学生更好地认识这个专业。</h3>
+                <p>更多...</p>
+                <div class="fakeimg"><img src="img/indexImage1.jpg" width="100%"></div>
+                <br>
+                <div class="fakeimg"><img src="img/indexImage2.jpg" width="100%"></div>
+                <br>
+                <div class="fakeimg"><img src="img/indexImage3.jpg" width="100%"></div>
+            </div>
+            <div class="main">
+                <h2>参考资料</h2>
+                <p>我收集的计算机学科各课程有用的参考资料</p>
+                <h3>编程学习</h3>
+                <p><a href="https://www.runoob.com/">菜鸟教程</a></p>
+                <p><a href="https://www.icourse163.org/">中国大学慕课</a></p>
+                <p><a href="https://www.csdn.net/">CSDN</a></p>
+                <p><a href="https://www.bilibili.com/">哔哩哔哩</a></p>
+                <h3>在线判题系统</h3>
+                <p><a href="https://www.luogu.com.cn/">洛谷</a></p>
+                <p><a href="http://www.pythontip.com/">PythonTip</a></p>
+                <p><a href="http://poj.org/">北京大学POJ</a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>页面作者：白曜华</p>
+            <p>联系作者：</p>
+            <p>电话：18303611177 QQ：1559958657</p>
+            <p>E-mail：baiyaohuaaa@stu.xjtu.edu.cn</p>
+        </div>
+    </body>
+</html>
